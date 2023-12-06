@@ -1,0 +1,374 @@
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ body {
+    background-color:  #23243a;
+} 
+
+.fit-data h1{
+  margin-top: 50px;
+  color: white;
+}
+
+
+/* --------------------------------Below starts the systematic calculator----------------------------------- */
+.section1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vw;
+}
+
+.section1 p{
+  margin-right: 5%;
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: black;
+  background: white;
+  padding: 20px 50px;
+  border: #000;
+  border-radius: 8px;
+}
+
+ #calculator{
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0px 3px 16px rgba(113, 115, 119, 0.5);
+    background: rgb(255, 255, 255);
+    margin-bottom: 100px;
+    margin-top: 100px;
+    /* space between both the sections */
+}
+
+#calculator input {
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px  rgba(113, 115, 119, 0.5);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #000;
+}
+input::placeholder{
+    color: rgb(75, 67, 67);
+}
+button{
+    border: none;
+    width: 60px;
+    height: 55px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #363636;
+    font-size: 20px;
+    box-shadow: 0px 3px 15px  rgba(113, 115, 119, 0.5);
+}
+.active{
+    color: rgb(25, 25, 167);
+}
+.activ{
+    color: #fff;
+    background: salmon;
+}
+.equal{
+    background-color: rgb(96, 158, 182);
+}
+
+/* -------------------------------------------Below is the BMI Calculator---------------------------------------------------------------- */
+
+:root { 
+    --underweight: orange;
+    --normal: green;
+    --overweight: lightcoral;
+    --obese: crimson;
+  }
+  .section-two{
+    width: 40vw;
+  }
+  .section2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vw;
+  }
+  .section2 h2{
+    margin-right: 5%;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    background: white;
+    padding: 20px 50px;
+    border: #000;
+    border-radius: 8px;
+    width: 50vw;
+  }
+  h1 {
+    text-align: center;
+  }
+  
+  #bmicalculator {
+    width: 90%;
+    max-width: 420px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+    display: grid;
+    gap: 1rem;
+}
+
+  #bmicalculator {
+    margin-bottom: 100px;
+  }
+  
+  form .calculator {
+    display: grid;
+    gap: 1rem;
+    
+  }
+  
+  form .calculator div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  form label {
+    flex: 0 1 120px;
+    font-weight: 600;
+  }
+  
+  form input {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    outline-color: #555;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  
+  .bmi {
+    width: 50%;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background: #00a1a3;
+    color: #fff; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  form .calculator button[type="reset"] {
+    background: #444;
+  }
+  
+  form .calculator button:hover {
+    filter: brightness(120%);
+  }
+  
+  .output {
+    text-align: center;
+  }
+  
+  .output #bmi {
+    font-size: 4rem;
+  }
+  
+  .output #desc strong {
+    text-transform: uppercase;
+  }
+  
+  .bmi-scale {
+    display: flex;
+  }
+  
+  .bmi-scale div {
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 5px solid var(--color);
+    padding: 10px;
+  }
+  
+  .bmi-scale h4 {
+    font-size: 0.75rem;
+    color: slategray;
+  }
+  
+  .underweight {
+    color: var(--underweight);
+  }
+  
+  .healthy {
+    color: var(--normal);
+  }
+  
+  .overweight {
+    color: var(--overweight);
+  }
+  
+  .obese {
+    color: var(--obese);
+  }
+
+  /* -----------------------------------Below is the Love Calculator-------------------------------------------- */
+
+  .section3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vw;
+  }
+  .section-three{
+    margin-left: 100px;
+  }
+  .section3 h2{
+    margin-right: 5%;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    background: white;
+    padding: 20px 50px;
+    border: #000;
+    border-radius: 8px;
+    width: 40vw;
+  }
+
+  .lovecalculator, .container {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+}
+
+.lovecalculator h1 {
+    color: #333;
+}
+
+.lovecalculator{
+  margin-bottom: 10%;
+}
+
+.lovecalculator input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.lovecalculator button {
+    background-color: salmon;
+    width: 50%;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.lovecalculator button:hover {
+    background-color: #bd0c39;
+}
+
+.lovecalculator #result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* ---------------------------------------------------------------Below is the tip Calculator----------------------------------------- */
+.section4{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vw;
+}
+.section-four{
+  width: 40vw;
+}
+.section4 h3{
+  margin-right: 5%;
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: black;
+  background: white;
+  padding: 20px 50px;
+  border: #000;
+  border-radius: 8px;
+}
+.tipcalculator {
+  margin-bottom: 100px;   
+  /* space between both the sections */
+}
+
+.tip-calculator h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.tipcalculator h1{
+  font-size: 30px;
+}
+.tip-calculator {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tip-calculator .calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tip-calculator label, input {
+  margin-bottom: 10px;
+}
+
+.tip-calculator input {
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.tip-calculator button {
+  padding: 10px 100px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#total {
+  text-align: center;
+  padding-left: 10px;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+.results {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.results p {
+  margin: 5px 0;
+  font-size: 20px;
+}
